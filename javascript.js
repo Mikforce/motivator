@@ -77,5 +77,5 @@ var urls = [
 document.getElementById("random-link").addEventListener("click", function(){
     var url = urls[Math.floor(Math.random()*urls.length)]
   alert("вы собираетесь перейти по ссылке: " + url);
-  this.href = url;
+  window.location.href = url;
 });
